@@ -11,14 +11,24 @@
 		208A8A2429E0E9F600836BD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208A8A2329E0E9F600836BD6 /* ContentView.swift */; };
 		208A8A2629E0E9F700836BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 208A8A2529E0E9F700836BD6 /* Assets.xcassets */; };
 		208A8A2929E0E9F700836BD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 208A8A2829E0E9F700836BD6 /* Preview Assets.xcassets */; };
+		208A8A3129E0F11700836BD6 /* cantor_cristao.json in Resources */ = {isa = PBXBuildFile; fileRef = 208A8A3029E0F11700836BD6 /* cantor_cristao.json */; };
+		208A8A3429E0F1B800836BD6 /* Hymn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208A8A3329E0F1B800836BD6 /* Hymn.swift */; };
+		208A8A3629E0F22400836BD6 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208A8A3529E0F22400836BD6 /* ModelData.swift */; };
+		208A8A3929E0F2CB00836BD6 /* HymnList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208A8A3829E0F2CB00836BD6 /* HymnList.swift */; };
+		208A8A3B29E0F45600836BD6 /* HymnLyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208A8A3A29E0F45600836BD6 /* HymnLyrics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		208A8A1E29E0E9F600836BD6 /* Cantor Cristao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cantor Cristao.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		208A8A1E29E0E9F600836BD6 /* CantorCristao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CantorCristao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		208A8A2129E0E9F600836BD6 /* Cantor_CristaoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cantor_CristaoApp.swift; sourceTree = "<group>"; };
 		208A8A2329E0E9F600836BD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		208A8A2529E0E9F700836BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		208A8A2829E0E9F700836BD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		208A8A3029E0F11700836BD6 /* cantor_cristao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cantor_cristao.json; sourceTree = "<group>"; };
+		208A8A3329E0F1B800836BD6 /* Hymn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hymn.swift; sourceTree = "<group>"; };
+		208A8A3529E0F22400836BD6 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		208A8A3829E0F2CB00836BD6 /* HymnList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnList.swift; sourceTree = "<group>"; };
+		208A8A3A29E0F45600836BD6 /* HymnLyrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnLyrics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +53,7 @@
 		208A8A1F29E0E9F600836BD6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				208A8A1E29E0E9F600836BD6 /* Cantor Cristao.app */,
+				208A8A1E29E0E9F600836BD6 /* CantorCristao.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +61,10 @@
 		208A8A2029E0E9F600836BD6 /* Cantor Cristao */ = {
 			isa = PBXGroup;
 			children = (
+				208A8A3729E0F2A000836BD6 /* Views */,
+				208A8A3229E0F19C00836BD6 /* Model */,
+				208A8A2F29E0F0F800836BD6 /* Resources */,
 				208A8A2129E0E9F600836BD6 /* Cantor_CristaoApp.swift */,
-				208A8A2329E0E9F600836BD6 /* ContentView.swift */,
 				208A8A2529E0E9F700836BD6 /* Assets.xcassets */,
 				208A8A2729E0E9F700836BD6 /* Preview Content */,
 			);
@@ -67,12 +79,39 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		208A8A2F29E0F0F800836BD6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				208A8A3029E0F11700836BD6 /* cantor_cristao.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		208A8A3229E0F19C00836BD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				208A8A3329E0F1B800836BD6 /* Hymn.swift */,
+				208A8A3529E0F22400836BD6 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		208A8A3729E0F2A000836BD6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				208A8A2329E0E9F600836BD6 /* ContentView.swift */,
+				208A8A3829E0F2CB00836BD6 /* HymnList.swift */,
+				208A8A3A29E0F45600836BD6 /* HymnLyrics.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		208A8A1D29E0E9F600836BD6 /* Cantor Cristao */ = {
+		208A8A1D29E0E9F600836BD6 /* CantorCristao */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 208A8A2C29E0E9F700836BD6 /* Build configuration list for PBXNativeTarget "Cantor Cristao" */;
+			buildConfigurationList = 208A8A2C29E0E9F700836BD6 /* Build configuration list for PBXNativeTarget "CantorCristao" */;
 			buildPhases = (
 				208A8A1A29E0E9F600836BD6 /* Sources */,
 				208A8A1B29E0E9F600836BD6 /* Frameworks */,
@@ -82,9 +121,9 @@
 			);
 			dependencies = (
 			);
-			name = "Cantor Cristao";
+			name = CantorCristao;
 			productName = "Cantor Cristao";
-			productReference = 208A8A1E29E0E9F600836BD6 /* Cantor Cristao.app */;
+			productReference = 208A8A1E29E0E9F600836BD6 /* CantorCristao.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +141,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 208A8A1929E0E9F600836BD6 /* Build configuration list for PBXProject "Cantor Cristao" */;
+			buildConfigurationList = 208A8A1929E0E9F600836BD6 /* Build configuration list for PBXProject "CantorCristao" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				208A8A1D29E0E9F600836BD6 /* Cantor Cristao */,
+				208A8A1D29E0E9F600836BD6 /* CantorCristao */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +166,7 @@
 			files = (
 				208A8A2929E0E9F700836BD6 /* Preview Assets.xcassets in Resources */,
 				208A8A2629E0E9F700836BD6 /* Assets.xcassets in Resources */,
+				208A8A3129E0F11700836BD6 /* cantor_cristao.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +178,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				208A8A2429E0E9F600836BD6 /* ContentView.swift in Sources */,
+				208A8A3629E0F22400836BD6 /* ModelData.swift in Sources */,
+				208A8A3929E0F2CB00836BD6 /* HymnList.swift in Sources */,
+				208A8A3B29E0F45600836BD6 /* HymnLyrics.swift in Sources */,
 				208A8A2229E0E9F600836BD6 /* Cantor_CristaoApp.swift in Sources */,
+				208A8A3429E0F1B800836BD6 /* Hymn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +314,8 @@
 				DEVELOPMENT_TEAM = 82TVN2X2TP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cantor Cristão";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +345,8 @@
 				DEVELOPMENT_TEAM = 82TVN2X2TP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cantor Cristão";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,7 +368,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		208A8A1929E0E9F600836BD6 /* Build configuration list for PBXProject "Cantor Cristao" */ = {
+		208A8A1929E0E9F600836BD6 /* Build configuration list for PBXProject "CantorCristao" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				208A8A2A29E0E9F700836BD6 /* Debug */,
@@ -329,7 +377,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		208A8A2C29E0E9F700836BD6 /* Build configuration list for PBXNativeTarget "Cantor Cristao" */ = {
+		208A8A2C29E0E9F700836BD6 /* Build configuration list for PBXNativeTarget "CantorCristao" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				208A8A2D29E0E9F700836BD6 /* Debug */,

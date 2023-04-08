@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct Cantor_CristaoApp: App {
+struct CantorCristaoApp: App {
+    @StateObject private var modelData = ModelData()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(modelData)
         }
     }
 }
